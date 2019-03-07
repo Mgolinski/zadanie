@@ -1,10 +1,10 @@
 class OrderItem
 	attr_reader :net_price, :quantity, :item_tax
 	
-	def initialize(p, q, t = 0.1)
+	def initialize(p, q)
 		@net_price = p
 		@quantity = q
-		@item_tax = t
+		@item_tax = 0.1
 	end
 	
 	def net_total
